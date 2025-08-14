@@ -64,7 +64,7 @@ defmodule Hermes.Server.Transport.StreamableHTTP do
 
   - `:server` - The server process (required)
   - `:name` - Name for registering the GenServer (required)
-  - `:call_timeout` - Timeout for internal GenServer calls in milliseconds (default: 10 minutes)
+  - `:call_timeout` - Timeout for internal GenServer calls in milliseconds (default: 30 seconds)
   """
   @type option ::
           {:server, GenServer.server()}
